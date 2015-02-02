@@ -14,6 +14,8 @@ end
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
+  gem 'cucumber-rails'
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 group :production do
   gem 'pg'
