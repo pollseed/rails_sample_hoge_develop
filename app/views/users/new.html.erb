@@ -3,9 +3,9 @@
 
 <div class="row">
   <div class="span6 offset3">
-    <%= render 'shared/error_messages' %>
     <ul>
     <%= form_for(@user) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
 
     <li>
     <%= f.label :name %>
